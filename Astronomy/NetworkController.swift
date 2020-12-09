@@ -27,6 +27,7 @@ class NetworkController {
         task.resume()
     }
     
+    // unit test this function
     func urlBuilder(date: Date) -> URL {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
@@ -39,7 +40,7 @@ class NetworkController {
     }
 
     func fetchImge(url: URL, completion: @escaping (UIImage?) -> Void) {
-        let task = URLSession.shared.dataTask(with: url) {
+        let task = self.session.dataTask(with: url) {
             (data, response, error) in
             if let data = data,
                let image = UIImage(data: data) {
@@ -50,7 +51,6 @@ class NetworkController {
         }
         task.resume()
     }
-
 }
 
 extension URL {
