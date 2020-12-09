@@ -2,9 +2,11 @@ import UIKit
 
 class ViewController: UIViewController {
     
+    var dateSelected: Date = Date()
+    
     @IBOutlet weak var datePicker: UIDatePicker!
     
-    var dateSelected: Date = Date()
+    @IBOutlet weak var discoverDescription: UILabel!
     
     @IBAction func datePickerChanged(_ sender: UIDatePicker) {
         dateSelected = sender.date
@@ -22,6 +24,13 @@ class ViewController: UIViewController {
             displayDate.date = dateSelected
         }
         
+    }
+}
+
+extension UIButton {
+    open override func draw(_ rect: CGRect) {
+        self.layer.cornerRadius = 10
+        self.layer.masksToBounds = true
     }
 }
 
