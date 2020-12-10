@@ -4,7 +4,7 @@ class ImageViewController: UIViewController {
     
     var date: Date?
     
-    let networkController = NetworkController(baseUrl:  "https://api.nasa.gov/planetary/apod", session: URLSession.shared, apiKey: "8nyjHCztYC0pLw1KKZ4APLXhgaQI4TvUA7HahTeL")
+    let networkController = NetworkController(baseUrl:  "https://api.nasa.gov/", session: URLSession.shared, apiKey: "8nyjHCztYC0pLw1KKZ4APLXhgaQI4TvUA7HahTeL")
     
     @IBOutlet weak var imageTitle: UILabel!
     
