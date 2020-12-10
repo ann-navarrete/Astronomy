@@ -24,6 +24,7 @@ class NetworkController {
                 completion(photoInfo)
             }
         }
+        print(PhotoInfo.self)
         task.resume()
     }
     
@@ -31,12 +32,12 @@ class NetworkController {
     func urlBuilder(date: Date) -> URL {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-MM-dd"
-        let baseURL = URL(string: self.baseUrl)!
+        let url = URL(string: self.baseUrl)!.appendingPathComponent("planetary/apod")
         let query: [String: String] = [
             "api_key": self.apiKey,
             "date": dateFormatter.string(from: date)
         ]
-        return baseURL.withQueries(query)!
+        return url.withQueries(query)!
     }
 
     func fetchImge(url: URL, completion: @escaping (UIImage?) -> Void) {

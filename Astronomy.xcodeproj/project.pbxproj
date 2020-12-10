@@ -16,6 +16,7 @@
 		65339509257F1A05004DF69B /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65339508257F1A05004DF69B /* NetworkController.swift */; };
 		6533950C257F1A28004DF69B /* PhotoInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533950B257F1A28004DF69B /* PhotoInfo.swift */; };
 		653395162580751E004DF69B /* AstronomyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 653395152580751E004DF69B /* AstronomyTests.swift */; };
+		6533952025819874004DF69B /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6533951F25819874004DF69B /* URLProtocolMock.swift */; };
 		65BB9CD9257DAA4C00967597 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BB9CD8257DAA4C00967597 /* ImageViewController.swift */; };
 /* End PBXBuildFile section */
 
@@ -43,6 +44,7 @@
 		653395132580751E004DF69B /* AstronomyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AstronomyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		653395152580751E004DF69B /* AstronomyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyTests.swift; sourceTree = "<group>"; };
 		653395172580751E004DF69B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6533951F25819874004DF69B /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
 		65BB9CD8257DAA4C00967597 /* ImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -85,6 +87,7 @@
 		6526F8D225786D7800538E14 /* Astronomy */ = {
 			isa = PBXGroup;
 			children = (
+				6533951F25819874004DF69B /* URLProtocolMock.swift */,
 				65BB9CD8257DAA4C00967597 /* ImageViewController.swift */,
 				65339508257F1A05004DF69B /* NetworkController.swift */,
 				6533950B257F1A28004DF69B /* PhotoInfo.swift */,
@@ -221,6 +224,7 @@
 				6526F8D825786D7800538E14 /* ViewController.swift in Sources */,
 				6526F8D425786D7800538E14 /* AppDelegate.swift in Sources */,
 				65BB9CD9257DAA4C00967597 /* ImageViewController.swift in Sources */,
+				6533952025819874004DF69B /* URLProtocolMock.swift in Sources */,
 				6526F8D625786D7800538E14 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
